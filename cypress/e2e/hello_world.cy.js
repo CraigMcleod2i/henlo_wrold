@@ -1,5 +1,5 @@
-describe("empty spec", () => {
-  it("passes", () => {
+describe("hello", () => {
+  it("world", () => {
     cy.visit("https://www.google.com");
     cy.get("button > div").contains("Reject all").click();
     "hello world".split("").forEach((char) => {
