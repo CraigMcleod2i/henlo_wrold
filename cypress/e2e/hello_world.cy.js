@@ -4,7 +4,6 @@ describe("hello", () => {
     cy.get("button > div").contains("Reject all").click();
     "hello world".split("").forEach((char) => {
       if (!!char.trim()) {
-        // cy.visit('https://www.google.com')
         if (char === "h") {
           cy.get("input[type=text]").type(char + "{enter}");
           cy.get('a:contains("Images")').click();
